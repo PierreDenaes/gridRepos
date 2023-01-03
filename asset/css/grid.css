@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@700;900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  top: 100px;
+}
+
+h1 {
+  margin: 0;
+  padding: 60px 0;
+  font-family: "Bangers", sans-serif;
+  text-align: center;
+  font-size: 3em;
+  background-image: url("../image/bg.png");
+  background-size: cover;
+  background-position: bottom;
+
+}
+
+h3 {
+  font-family: "Bangers", sans-serif;
+  font-size: 2em;
+}
+
+.nb {
+  font-family: "Bangers", sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0 30px 10px;
+  font-size: 2em;
+  margin: 0;
+}
+
+/* navbar */
+repeat
+
+.logo {
+  width: 20%;
+  text-align: center;
+}
+
+.logo img {
+  width: 100px;
+}
+
+nav {
+  width: 80%;
+  position: relative;
+}
+
+nav ul {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav ul li {
+  margin: auto;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+ul li a:hover {
+  box-shadow: 0 5px 15px -11px rgba(0, 0, 0, 0.3);
+  padding-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* end navbar */
+
+.header,
+.footer,
+.content,
+.sidebar {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.header {
+  grid-area: hd;
+}
+
+.footer {
+  grid-area: ft;
+}
+
+.content {
+  grid-area: main;
+}
+
+.sidebar {
+  grid-area: sd;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  background-color: #e5a903;
+  grid-template-columns: repeat(9, 1fr);
+  padding: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd hd" "sd sd sd main main main main main main" "ft ft ft ft ft ft ft ft ft";
+}
+
+/* Grid more complex */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+  background-color: #e5a903;
+  padding: 10px;
+}
+
+.grid-container>div {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-area: 1 / 1 / span 1 / span 9;
+}
+
+.item2 {
+  grid-area: 2 / 1/ span 5 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item3 {
+  grid-area: 2 / 3/ span 1 / span 1;
+}
+
+.item4 {
+  grid-area: 3 / 3/ span 1 / span 1;
+}
+
+.item5 {
+  grid-area: 4 / 3/ span 1 / span 1;
+}
+
+.item6 {
+  grid-area: 5 / 3/ span 1 / span 1;
+}
+
+.item7 {
+  grid-area: 6 / 3/ span 1 / span 1;
+}
+
+.item8 {
+  grid-area: 2 / 4/ span 5 / span 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item8-ex {
+  grid-area: 2 / 4/ span 5 / span 6;
+  display: flex;
+  flex-direction: column;
+}
+
+.item9 {
+  grid-area: 7 / 1/ span 2 / span 9;
+  padding: 50px 0 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+}
+
+/* with content */
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-container2>div {
+
+  text-align: center;
+}
+
+.navbar-ex {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 8px 15px -10px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+
+.grid-container2>.item1 {
+  margin-bottom: 15px;
+}
+
+.item3>img,
+.item4>img,
+.item5>img,
+.item6>img,
+.item7>img {
+  width: 50%;
+  border-radius: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.item3>p,
+.item4>p,
+.item5>p,
+.item6>p,
+.item7>p {
+  font-size: 10px;
+}
+
+.item3,
+.item4,
+.item5,
+.item6,
+.item7 {
+  padding-top: 10px;
+}
+
+.item3 img:hover,
+.item4 img:hover,
+.item5 img:hover,
+.item6 img:hover,
+.item7 img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 16px 14px -10px rgba(0, 0, 0, 0.35);
+}
+
+.item8-ex {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.item8-ex>p {
+  font-family: "Bangers", sans-serif;
+  font-size: 2em;
+  margin-right: auto;
+  transition: all .2s ease-in-out;
+}
+
+.item8-ex>p:hover {
+  transition: all .2s ease-in-out;
+  transform: translateX(500px);
+}
+
+.flip-card-front>img {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 40px;
+  transition: all .2s ease-in-out;
+
+}
+
+.item2-ex {
+  padding-left: 20px;
+  grid-area: 2 / 1/ span 5 / span 2;
+}
+
+/* flip card */
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 100%;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  margin: 0;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  background: rgb(131, 58, 180);
+  background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(255, 205, 135, 1) 0%, rgba(253, 29, 29, 1) 100%);
+  border-radius: 0 0 0 15px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 0 0 0 15px;
+  overflow-y: scroll;
+}
+
+.flip-card-back>p {
+  text-align: justify;
+  padding: 20px;
+}
+
+/* footer */
+.item9>p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.copyleft {
+  width: 30px;
+
+}
+
+@media screen and (max-width:1320px) {
+  .item1 {
+    grid-area: 1 / 1 / span 1 / span 9;
+  }
+
+  .item2 {
+    grid-area: 3 / 1/ span 5 / span 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item2-ex {
+    padding-left: 20px;
+    grid-area: 3 / 1/ span 5 / span 3;
+  }
+
+  .item3 {
+    grid-area: 2 / 3/ span 1 / span 1;
+  }
+
+  .item4 {
+    grid-area: 2 / 4/ span 1 / span 1;
+  }
+
+  .item5 {
+    grid-area: 2 / 5/ span 1 / span 1;
+  }
+
+  .item6 {
+    grid-area: 2 / 6/ span 1 / span 1;
+  }
+
+  .item7 {
+    grid-area: 2 / 7/ span 1 / span 1;
+  }
+
+  .item8 {
+    grid-area: 3 / 4/ span 5 / span 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item8-ex {
+    grid-area: 3 / 4/ span 5 / span 6;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .item9 {
+    grid-area: 7 / 1/ span 2 / span 9;
+    padding: 50px 0 20px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+  }
+
+  .flip-card-front>img {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 40px;
+    transition: all .2s ease-in-out;
+
+  }
+
+}

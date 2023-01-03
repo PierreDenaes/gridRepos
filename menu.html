@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .navbar {
+                z-index: 100;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                display: flex;
+                box-shadow: 0 8px 15px -10px rgba(0, 0, 0, 0.3);
+                background-color: #fff;
+            }
+            .logo {
+                width: 20%;
+                text-align: center;
+            }
+
+            .logo img {
+                width: 100px;
+            }
+
+            nav {
+                width: 80%;
+                position: relative;
+            }
+
+            nav ul {
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            nav ul li {
+                margin: auto;
+            }
+
+            ul li a {
+                text-decoration: none;
+                font-size: 22px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.7);
+            }
+
+            ul li a:hover {
+                box-shadow: 0 5px 15px -11px rgba(0, 0, 0, 0.3);
+                padding-bottom: 10px;
+                color: #000;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Start Menu-->
+        <div class="navbar">
+            <div class="logo">
+                <img src="asset/image/Superman.png" alt="logo superman">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="grid.html">Grid</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!--End Menu-->
+    </body>
+</html>
